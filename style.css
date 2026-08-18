@@ -2,11 +2,15 @@ body {
     display: flex;
     justify-content: center;
     justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background-color: #f3f4f6;
-      font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+    /* min-height: 100vh; */
+    margin: 0;
+    background-color: #c4d3e9;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    gap: 50px;
 }
 
 .container {
@@ -27,8 +31,38 @@ button {
       align-items: center;
       background-color: #ffffff;
       color: #1f2937;
-      font-weight: bold;
       font-size: 1.2rem;
       border-radius: 4px;
       user-select: none;
+}
+.hidden-text {
+    color: transparent;
+}
+.display {
+    display: block;
+}
+
+.timer-btn {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
+}
+
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+.time {
+    display:flex;
+    gap: 4px;
+}
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    font-weight: 100; 
 }
